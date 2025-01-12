@@ -1,0 +1,554 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,700");
+
+
+:root {
+  --bg-primary: #f9f9f9;
+  /* --bg-primary: #f5f5f5; */
+  /* --bg-primary: #f4f2f2; */
+  --bg-secondary: #f5f5f5;
+  /* --bg-secondary: #c2bebe; */
+  --color-primary: #101010;
+  --gray-dark: #262424;
+  --gray-medium: #333131;
+  --gray-light: #bdb8b8;
+  --orange-medium: #c13b22;
+  --orange-dark: #993822;
+  --orange-ligth: #d28f09;
+  --orange-pastel-medium: #f9ab2cb8;
+  --green-pastel-medium: #42a35b;
+  --blue-pastel-medium: #5171bd;
+  --blue-pastel-dark: #1235a8f8;
+  /* --blue-pastel-medium: #59a0cb; */
+
+
+  --height-header: 96px;
+  /* --orange-dark : #ff5733; */
+
+  --spacing-0: 4px;
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-5: 40px;
+  --spacing-6: 48px;
+  --spacing-7: 56px;
+  --spacing-8: 64px;
+
+
+  --shadow-button: 0 0 3px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 0 6px rgba(0, 0, 0, 0.2);
+  --shadow-call-to-action: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --shadow-call-to-action-hover: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+body,
+body *,
+body::after,
+body *::before 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--color-primary);
+  font-family: 'Lucida Sans Unicode';
+  /* user-select: none; */
+}
+
+header,
+.hero {
+  background-color: var(--bg-secondary);
+}
+
+section {
+
+  padding-top: var(--spacing-6);
+  padding-bottom: var(--spacing-8);
+
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: var(--spacing-4);
+}
+
+
+hr {
+  background-color: var(--gray-light);
+  border: none;
+  opacity: 0.5;
+  height: 3px;
+  border-radius: 20;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
+
+.header {
+  height: var(--height-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo {
+  height: 64px;
+  position: relative;
+  /* border-radius: 50%; */
+  opacity: .4;
+  z-index: 998;
+
+
+}
+
+.card-green {
+  background-color: var(--green-pastel-medium);
+  color: #fff;
+}
+
+.card-blue {
+  background-color: var(--blue-pastel-medium);
+  color: #fff;
+}
+
+.card-orange {
+  background-color: var(--orange-ligth);
+  color: #fff;
+}
+
+.academy-name {
+  letter-spacing: 5px;
+  color: var(--orange-medium);
+}
+
+
+/* Estilo base */
+.underline-hover {
+  padding: 8px;
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  cursor: default;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  z-index: 999;
+}
+
+/* El pseudo-elemento para el subrayado */
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 4%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--orange-dark), var(--orange-medium));
+  box-shadow: var(--shadow-card);
+  transition: width 0.3s ease;
+}
+
+.underline-hover:hover::after {
+  width: 90%;
+}
+
+
+.container {
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - var(--height-header));
+  overflow: hidden;
+  letter-spacing: 1.8px;
+  user-select: none;
+
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.hero-content button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--orange-medium);
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+}
+
+.hero-content button:hover {
+  background-color: var(--orange-dark);
+}
+
+/* Por que elegirnos Section Styles*/
+.divider {
+  height: var(--height-header);
+  background-color: var(--gray-medium);
+}
+
+
+
+
+.description ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /*media*/
+  font-size: 1.6rem;
+  gap: var(--spacing-5);
+}
+
+.description ul li {
+  list-style: none;
+  width: 300px;
+  font-size: 1.2rem;
+}
+
+.description ul li i {
+  display: block;
+  margin-bottom: var(--spacing-1);
+  text-align: center;
+  font-size: 3rem;
+
+}
+
+/******************************************************************************************************************************/
+/********************************************************* Cursos Section Styles***********************************************/
+/******************************************************************************************************************************/
+
+.courses-cards-container {
+  justify-content: center;
+  margin-top: var(--spacing-8);
+}
+
+
+.courses-cards-container details {
+  margin-bottom: var(--spacing-1);
+  transition: box-shadow 0.3s ease;
+  color: var(--bg-primary);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.courses-cards-container summary {
+  border-radius: 4px;
+  user-select: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  list-style: none;
+  background-color: var(--blue-pastel-medium);
+  transition: background-color .3s ease;
+}
+
+.courses-cards-container summary:hover {
+  background-color: var(--blue-pastel-dark);
+}
+
+/* .courses-cards-container details[open] summary {
+  border-radius: 6px 6px 0 0;
+}
+
+.courses-cards-container details[open] p {
+  border-radius: 0 0 6px 6px;
+} */
+
+.courses-cards-container summary .icon {
+  transition: transform 0.3s ease;
+}
+
+.courses-cards-container summary .icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f067';
+  font-weight: 900;
+
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.courses-cards-container details[open] summary .icon::before {
+  content: '\f068';
+}
+
+
+ details p {
+  font-size: 16px;
+  margin-top: 4px;
+  color: var(--color-primary);
+  padding: var(--spacing-2) var(--spacing-2) var(--spacing-3);
+  line-height: 1.5;
+  border: rgba(0, 0, 0, 0.1) solid 0.1px;
+  /* border-radius: 6px; */
+}
+
+
+
+/******************************************************************************************************************************/
+/*********************************************************        Contacto        ***********************************************/
+/******************************************************************************************************************************/
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-container p {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--gray-medium);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-container label{
+  display: block;
+  font-weight: bold;
+  color: var(--gray-dark);
+  margin-bottom: 0.5rem;
+}
+
+.form-container input,.form-container  textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--gray-light);
+  border-radius: 4px;
+  background-color: var(--bg-primary);
+  color: var(--gray-medium);
+  font-size: 1rem;
+}
+
+.form-container input:focus,.form-container  textarea:focus {
+  border-color: var(--blue-pastel-medium);
+  outline: none;
+  box-shadow: 0 0 4px rgba(81, 113, 189, 0.5);
+}
+
+.form-group textarea {
+  resize: none;
+  height: 120px;
+}
+
+.form-button {
+  text-align: center;
+}
+
+.form-container button {
+  background-color: var(--orange-medium);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: var(--orange-dark);
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--gray-light);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button img {
+  width: 35px;
+  height: 35px;
+}
+/******************************************************************************************************************************/
+/*********************************************************        Footer        ***********************************************/
+/******************************************************************************************************************************/
+
+footer {
+  min-height: 400px;
+  background-color: var(--gray-dark);
+}
+
+/* Estilo del contenedor general */
+.cta-container {
+  margin-top: var(--height-header);
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff5eb;
+  /* Fondo claro para destacar */
+  border-radius: 15px;
+  box-shadow: var(--shadow-card);
+}
+
+/* Título del Call to Action */
+.cta-heading {
+  font-size: 2em;
+  color: #c13b22;
+  margin-bottom: 15px;
+  font-weight: bold;
+  animation: fadeIn 2s ease forwards;
+}
+
+/* Descripción del Call to Action */
+.cta-description {
+  font-size: 1.2em;
+  color: #993822;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  animation: fadeIn 2s ease forwards 1s;
+}
+
+/* Botón principal */
+.cta-button {
+  margin-right: 30px;
+  background: linear-gradient(45deg, #c13b22, #d28f09, #f9ab2cb8, #993822);
+  background-size: 300% 300%;
+  color: #fff;
+  padding: 15px 35px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 16px;
+  box-shadow: var(--shadow-call-to-action);
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s ease;
+  animation: gradientMove 6s ease infinite;
+}
+
+.cta-button:hover {
+  box-shadow: var(--shadow-call-to-action-hover);
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* Efecto pulsante */
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  animation: pulsate 1.5s infinite;
+}
+
+/* Keyframes para la animación del gradiente */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Keyframes para el efecto pulsante */
+@keyframes pulsate {
+  0% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+/* Animaciones de aparición para el título y descripción */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
