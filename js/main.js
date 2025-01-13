@@ -37,7 +37,7 @@ const detailsData = {
     html: 'Aunque el curso se enfoca en JavaScript, aprenderás a integrar tu código con otras tecnologías esenciales para construir aplicaciones dinámicas. Usaremos HTML, librerías de JS, WebSockets, TypeScript, Node e incluso diferentes motores de Bases de Datos.',
     api: 'Aprende a consumir servicios externos y a trabajar con APIs REST, utilizando técnicas de fetching para enviar y recibir datos de manera eficiente.<br><br>Explorarás cómo integrar datos en tiempo real, manejar respuestas asíncronas y optimizar la comunicación entre tu aplicación y el servidor. Realizaremos múltiples proyectos prácticos que te guiarán en este camino.',
     modernJS: "Mantente actualizado con las últimas características de ECMAScript, explorando módulos, clases, operadores avanzados y métodos modernos de trabajo.",
-    projects: "Consolida tu aprendizaje construyendo proyectos prácticos que reflejan problemas del mundo real, desde pequeños scripts hasta sistemas completos. <br>En este curso encontrarás múltiples desafíos acórdes al nivel de cada etapa.",
+    projects: "Consolida tu aprendizaje construyendo proyectos prácticos que reflejan problemas del mundo real, desde pequeños scripts hasta sistemas completos. <br>En este curso encontrarás múltiples desafíos acordes al nivel de cada etapa.",
     future: "Termina el curso listo para enfrentar cualquier desafío, desde crear aplicaciones modernas hasta aprender nuevos lenguajes y tecnologías con una base sólida en programación."
 };
 
