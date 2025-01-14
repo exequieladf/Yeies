@@ -68,8 +68,8 @@ header,
 
 section {
 
-  padding-top: var(--spacing-6);
-  padding-bottom: var(--spacing-8);
+
+  overflow-x: hidden;
 
 }
 
@@ -190,7 +190,8 @@ hr {
   overflow: hidden;
   letter-spacing: 1.8px;
   user-select: none;
-  
+  padding-top: var(--spacing-7);
+  padding-bottom: var(--spacing-7);
 }
 
 #particles-js {
@@ -270,13 +271,19 @@ hr {
   animation: pulsate 1.5s infinite;
 }
 
-/* Por que elegirnos Section Styles*/
+/******************************************************************************************************************************/
+/*********************************************************         Description      ***********************************************/
+/******************************************************************************************************************************/
+
+.description{
+  padding-top: var(--spacing-7);
+  padding-bottom: var(--spacing-7);
+}
+
 .divider {
   height: var(--height-header);
   background-color: var(--gray-medium);
 }
-
-
 
 
 .description ul {
@@ -299,13 +306,17 @@ hr {
   margin-bottom: var(--spacing-1);
   text-align: center;
   font-size: 3rem;
-
+  
 }
 
 /******************************************************************************************************************************/
 /********************************************************* Cursos Section Styles***********************************************/
 /******************************************************************************************************************************/
 
+.courses{
+  padding-top: var(--spacing-7);
+
+}
 .courses-cards-container {
   justify-content: center;
   margin-top: var(--spacing-8);
@@ -374,114 +385,6 @@ details p {
   border: rgba(0, 0, 0, 0.1) solid 0.1px;
   /* border-radius: 6px; */
 }
-
-
-
-/******************************************************************************************************************************/
-/*********************************************************        Contacto        ***********************************************/
-/******************************************************************************************************************************/
-.form-container {
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background-color: var(--bg-secondary);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.form-container p {
-  text-align: center;
-  margin-bottom: 1rem;
-  color: var(--gray-medium);
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-container label {
-  display: block;
-  font-weight: bold;
-  color: var(--gray-dark);
-  margin-bottom: 0.5rem;
-}
-
-.form-container input,
-.form-container textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid var(--gray-light);
-  border-radius: 4px;
-  background-color: var(--bg-primary);
-  color: var(--gray-medium);
-  font-size: 1rem;
-}
-
-.form-container input:focus,
-.form-container textarea:focus {
-  border-color: var(--blue-pastel-medium);
-  outline: none;
-  box-shadow: 0 0 4px rgba(81, 113, 189, 0.5);
-}
-
-.form-group textarea {
-  resize: none;
-  height: 120px;
-}
-
-.form-button {
-  text-align: center;
-}
-
-.form-container button {
-  background-color: var(--orange-medium);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.form-container button:hover {
-  background-color: var(--orange-dark);
-}
-
-.note {
-  font-size: 0.9rem;
-  color: var(--gray-light);
-  text-align: center;
-  margin-top: 1rem;
-}
-
-/* Botón flotante de WhatsApp */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.whatsapp-button:hover {
-  transform: scale(1.1);
-}
-
-.whatsapp-button img {
-  width: 35px;
-  height: 35px;
-}
-
 /******************************************************************************************************************************/
 /*********************************************************        Call To Action        ***********************************************/
 /******************************************************************************************************************************/
@@ -603,6 +506,112 @@ details p {
   }
 }
 
+
+/******************************************************************************************************************************/
+/*********************************************************        Contacto        ***********************************************/
+/******************************************************************************************************************************/
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--spacing-8) 1.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-container p {
+  text-align: center;
+  color: var(--gray-medium);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-container label {
+  display: block;
+  font-weight: bold;
+  color: var(--gray-dark);
+  margin-bottom: 0.5rem;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: .75rem;
+  border: 1px solid var(--gray-light);
+  border-radius: 4px;
+  background-color: var(--bg-primary);
+  color: var(--gray-medium);
+  font-size: 1rem;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: var(--blue-pastel-medium);
+  outline: none;
+  box-shadow: 0 0 4px rgba(81, 113, 189, 0.5);
+}
+
+.form-group textarea {
+  resize: none;
+  height: 120px;
+}
+
+.form-button {
+  text-align: center;
+}
+
+.form-container button {
+  background-color: var(--orange-medium);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: var(--orange-dark);
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--gray-light);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  z-index: 9999;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button img {
+  width: 35px;
+  height: 35px;
+}
 /******************************************************************************************************************************/
 /*********************************************************        Footer        ***********************************************/
 /******************************************************************************************************************************/
