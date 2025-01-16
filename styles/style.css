@@ -297,7 +297,7 @@ hr {
 
 .description ul li {
   list-style: none;
-  width: 300px;
+  width: 100%;
   font-size: 1.2rem;
 }
 
