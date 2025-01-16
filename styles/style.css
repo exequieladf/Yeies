@@ -599,7 +599,7 @@ details p {
 }
 
 .form-container button:hover {
-  background-color: var(--orange-dark);
+  background-color: var(--blue-pastel-dark);
 }
 
 .note {
