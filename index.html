@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,23 +8,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
   <link rel="stylesheet" href="./styles/style.css" />
-
-  <!-- <script src="./lib/particles.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="./js/particles.js" defer></script>
   <!-- <script src="./js/main.js" defer></script> -->
 </head>
-
 <body>
-  <!-- Secciones -->
-  <!-- TODO NOW: Cursos -->
-  <!-- TODO: Porque estudiar JavaScript  -->
-  <!-- TODO: Contactanos -->
-  <!-- TODO: Footer -->
 
   <!-- <header>
     <div class="header container">
@@ -41,7 +30,7 @@
   </header> -->
 
   <main>
-    <section class="hero">
+    <section id="home" class="hero">
       <div id="particles-js"></div>
       <div class="hero-content">
         <div class="container">
@@ -54,8 +43,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <div class="divider"></div> -->
 
     <section class="description">
 
@@ -80,11 +67,6 @@
               basados en situaciones reales.
             </p>
           </li>
-          <!-- <li>
-            <i class="fa-solid fa-user-tie"></i>
-            <h3>Profesionales a tu lado</h3>
-            <p>Nuestro equipo combina experiencia en la industria con pasión por enseñar, guiándote en cada paso.</p>
-          </li> -->
           <li>
             <i class="fa-solid fa-comments"></i>
             <h3>Acompañamiento constante</h3>
@@ -97,7 +79,7 @@
       </div>
     </section>
     <hr>
-    <section class="courses">
+    <section id="courses" class="courses">
 
       <div class="container">
         <h2 class="courses-title">Curso de JavaScript: De Cero a Experto</h2>
@@ -123,46 +105,28 @@
                 sólida base para proyectos reales.</p>
             </details>
             <details>
-              <summary><span class="icon"></span> Desarrollo de Proyectos Reales</summary>
-              <p>Consolida tu aprendizaje construyendo proyectos prácticos que reflejan problemas del mundo real, desde
-                pequeños scripts hasta sistemas completos. <br>En este curso encontrarás múltiples desafíos acordes al
-                nivel de cada etapa.</p>
-            </details>
-            <details>
               <summary><span class="icon"></span> Conocimientos en Programación</summary>
               <p>Explora la esencia de la programación, comprendiendo los principios fundamentales que van más allá de
                 cualquier lenguaje, como la lógica, la estructura y el diseño de soluciones eficientes.<br><br>Este
                 curso está diseñado para que domines los conceptos esenciales que te permitirán enfrentarte a cualquier
                 tecnología de manera efectiva.</p>
             </details>
-            <details>
-              <summary><span class="icon"></span> JavaScript Moderno</summary>
-              <p>Mantente actualizado con las últimas características de ECMAScript, explorando módulos, clases,
-                operadores avanzados y métodos modernos de trabajo.</p>
-            </details>
+
             <details>
               <summary><span class="icon"></span> Interacción y Desarrollo Full-Stack</summary>
               <p>Aunque el curso se enfoca en JavaScript, aprenderás a integrar tu código con otras tecnologías
                 esenciales para construir aplicaciones dinámicas. Usaremos HTML, librerías de JS, WebSockets,
                 TypeScript, Node e incluso diferentes motores de Bases de Datos.</p>
             </details>
-            <details>
-              <summary><span class="icon"></span> Conceptos Avanzados</summary>
-              <p>Domina temas complejos como closures, manejo de asincronía con promesas y async/await, programación
-                funcional, patrones de diseño y mucho más.</p>
-            </details>
+
             <details>
               <summary><span class="icon"></span> Manipulación Dinámica de Datos</summary>
               <p>Aprende a manejar datos de forma eficiente, utilizando técnicas avanzadas de manipulación, filtrado,
                 transformación y almacenamiento, con ejemplos en diferentes contextos y necesidades de
                 rendimiento.<br><br>Profundiza en estructuras como arrays, objetos, maps, sets, symbols, clases, entre
                 otras.</p>
-            </details>
-            <details>
-              <summary><span class="icon"></span> JavaScript en todos sus Entornos</summary>
-              <p>Aprende a usar JavaScript no solo en el navegador, sino también en entornos como Node.js para crear
-                aplicaciones backend, herramientas y scripts avanzados.</p>
-            </details>
+            </details>            
+            
             <details>
               <summary><span class="icon"></span> Trabajo con APIs y Fetching</summary>
               <p>Aprende a consumir servicios externos y a trabajar con APIs REST, utilizando técnicas de fetching para
@@ -170,16 +134,40 @@
                 manejar respuestas asíncronas y optimizar la comunicación entre tu aplicación y el servidor.
                 Realizaremos múltiples proyectos prácticos que te guiarán en este camino.</p>
             </details>
+
+            <details>
+              <summary><span class="icon"></span> Desarrollo de Proyectos Reales</summary>
+              <p>Consolida tu aprendizaje construyendo proyectos prácticos que reflejan problemas del mundo real, desde
+                pequeños scripts hasta sistemas completos. <br>En este curso encontrarás múltiples desafíos acordes al
+                nivel de cada etapa.</p>
+            </details>
+
+            <details>
+              <summary><span class="icon"></span> JavaScript Moderno</summary>
+              <p>Mantente actualizado con las últimas características de ECMAScript, explorando módulos, clases,
+                operadores avanzados y métodos modernos de trabajo.</p>
+            </details>
+
+            <details>
+              <summary><span class="icon"></span> Conceptos Avanzados</summary>
+              <p>Domina temas complejos como closures, manejo de asincronía con promesas y async/await, programación
+                funcional, patrones de diseño y mucho más.</p>
+            </details>
+
+            <details>
+              <summary><span class="icon"></span> JavaScript en todos sus Entornos</summary>
+              <p>Aprende a usar JavaScript no solo en el navegador, sino también en entornos como Node.js para crear
+                aplicaciones backend, herramientas y scripts avanzados.</p>
+            </details>
+
             <details>
               <summary><span class="icon"></span> Preparación para el Futuro</summary>
               <p>Termina el curso listo para enfrentar cualquier desafío, desde crear aplicaciones modernas hasta
                 aprender nuevos lenguajes y tecnologías con una base sólida en programación.</p>
             </details>
           </div>
-
         </div>
       </div>
-
 
       <div class="cta-container">
         <h2 class="cta-heading">Descargá el Programa Completo del Curso</h2>
@@ -192,14 +180,12 @@
           Descargar Programa en PDF
         </a>
       </div>
-
-
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="form-container">
         <h2>¡Contáctanos!</h2>
-        <p>Queremos ayudarte a comenzar tu camino en el mundo de JavaScript.</p>
+        <p>Queremos ayudarte a recorrer tu camino en el mundo de JavaScript.</p>
         <form id="contact-form">
           <div class="form-group">
             <label for="name">Nombre completo</label>
@@ -210,12 +196,8 @@
             <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
           </div>
           <div class="form-group">
-            <label for="phone">Teléfono</label>
-            <input type="tel" id="phone" name="phone" placeholder="Ejemplo: +54 11 1234 5678">
-          </div>
-          <div class="form-group">
             <label for="message">Mensaje</label>
-            <textarea id="message" name="message" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            <textarea id="message" name="message" placeholder="Escribe aquí tu consulta" required></textarea>
           </div>
           <div class="form-button">
             <button type="submit">Enviar</button>
@@ -223,16 +205,41 @@
         </form>
         <p class="note">Nos pondremos en contacto contigo dentro de las 24 horas.</p>
       </div>
-
-      <!-- Botón flotante de WhatsApp -->
       <a href="https://wa.me/5491234567890?text=¡Hola!%20Estoy%20interesado%20en%20el%20curso%20de%20JavaScript"
         target="_blank" class="whatsapp-button">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
       </a>
     </section>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-section">
+          <h2 style="display: none;">Footer</h2>
+          <h3>YEIES</h3>
+          <p>Tu plataforma ideal para aprender programación con técnicas modernas y proyectos reales.</p>
+        </div>
+        <nav class="footer-section">
+          <h3>Mapa del sitio</h3>
+          <ul class="web-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#courses">Cursos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Yeies Cursos. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    
   </main>
 </body>
-
 </html>
