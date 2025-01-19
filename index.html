@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,22 +13,20 @@
   <link rel="stylesheet" href="./styles/style.css" />
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="./js/particles.js" defer></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> Tailwind CSS CDN -->
   <!-- <script src="./js/main.js" defer></script> -->
 </head>
+
 <body>
 
-  <!-- <header>
+  <header>
     <div class="header container">
       <a href="./">
-        <img class="logo" src="./images/logos/logo-yeies-buo-website.png" alt="" />
+        <img class="logo" src="./images/logos/logo-yeies-buo-only.png" alt="" />
       </a>
-      <nav>
-        <a class="underline-hover" href="#">Cursos</a>
-        <a class="underline-hover" href="#">Contacto</a>
-        <a class="underline-hover" href="#">Consultas</a>
-      </nav>
+
     </div>
-  </header> -->
+  </header>
 
   <main>
     <section id="home" class="hero">
@@ -125,8 +124,8 @@
                 transformación y almacenamiento, con ejemplos en diferentes contextos y necesidades de
                 rendimiento.<br><br>Profundiza en estructuras como arrays, objetos, maps, sets, symbols, clases, entre
                 otras.</p>
-            </details>            
-            
+            </details>
+
             <details>
               <summary><span class="icon"></span> Trabajo con APIs y Fetching</summary>
               <p>Aprende a consumir servicios externos y a trabajar con APIs REST, utilizando técnicas de fetching para
@@ -210,36 +209,79 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
       </a>
     </section>
-
-    <footer class="footer">
-      <div class="container footer-content">
-        <div class="footer-section">
-          <h2 style="display: none;">Footer</h2>
-          <h3>YEIES</h3>
-          <p>Tu plataforma ideal para aprender programación con técnicas modernas y proyectos reales.</p>
-        </div>
-        <nav class="footer-section">
+  </main>
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h2 style="display: none;">Footer</h2>
+        <h3>YEIES</h3>
+        <p>Tu plataforma ideal para aprender programación con técnicas modernas y proyectos reales.</p>
+      </div>
+      <!-- <nav class="footer-section">
           <h3>Mapa del sitio</h3>
           <ul class="web-links">
             <li><a href="#home">Inicio</a></li>
             <li><a href="#courses">Cursos</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
-        </nav>
-        <div class="footer-section">
-          <h3>Síguenos</h3>
-          <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
+        </nav> -->
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Yeies Cursos. Todos los derechos reservados.</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Yeies Cursos. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- <section class="p-6 bg-gray-100">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-6">Sección de Tarjetas</h2>
+      <div class="flex flex-wrap gap-6 justify-center">
+
+        <div
+          class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Título 1</h3>
+          <p class="text-gray-600">Descripción breve de la tarjeta 1.</p>
+        </div>
+
+        <div
+          class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Título 2</h3>
+          <p class="text-gray-600">Descripción breve de la tarjeta 2.</p>
+        </div>
+
+        <div
+          class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Título 3</h3>
+          <p class="text-gray-600">Descripción breve de la tarjeta 3.</p>
+        </div>
+
+        <div
+          class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Título 4</h3>
+          <p class="text-gray-600">Descripción breve de la tarjeta 4.</p>
+        </div>
+
+        <div
+          class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Título 5</h3>
+          <p class="text-gray-600">Descripción breve de la tarjeta 5.</p>
+        </div>
+
+        <div
+          class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Título 6</h3>
+          <p class="text-gray-600">Descripción breve de la tarjeta 6.</p>
+        </div>
       </div>
-    </footer>
-    
-  </main>
+    </div>
+  </section> -->
 </body>
+
 </html>
