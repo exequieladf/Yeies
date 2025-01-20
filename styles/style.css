@@ -117,16 +117,8 @@ hr {
 
 
 .logo {
-  width: 60%;
-  position: absolute;
-  left: 50%;
-  top: 60px;
-  transform: translateX(-50%);
-  /* border-radius: 50%; */
+  width: 200px;
   opacity: .1;
-  z-index: 998;
-
-
 }
 
 .card-green {
@@ -230,6 +222,9 @@ hr {
 .hero-content {
   text-align: center;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-content h1 {
