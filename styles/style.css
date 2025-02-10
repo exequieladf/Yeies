@@ -6,6 +6,7 @@ html {
 }
 
 :root {
+  --bg-header: #f2f2f2;
   --bg-primary: #f9f9f9;
   /* --bg-primary: #f5f5f5; */
   /* --bg-primary: #f4f2f2; */
@@ -51,6 +52,18 @@ html {
 
 }
 
+[data-theme='dark'] {
+  --bg-primary: #181818;
+  --bg-secondary: #242424;
+  --bg-header: #423f3f;
+  --color-primary: #e0e0e0; /* Color de texto claro */
+  --gray-dark: #f0f0f0; /* Para el texto claro */
+  --gray-medium: #bdb8b8; /* Para el texto medio */
+  --gray-light: #7a7a7a; /* Para el texto más claro */
+  --orange-medium: #c13b22; /* Mantener el mismo o cambiar a un tono más oscuro */
+  --orange-dark: #993822;
+  --orange-ligth: #d28f09;
+  }
 
 
 body,
@@ -114,11 +127,12 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 8px 32px;
+  background-color: var(--bg-header);
   position: sticky;
-  background-color: rgb(244, 242, 242);
   top: 0;
   z-index: 99999;
   box-shadow: 0 -8px 16px var(--gray-light);
+  /* background-color: rgb(244, 242, 242);*/
 }
 
 
@@ -792,4 +806,13 @@ nav.footer-section h3 {
 
 .footer-bottom p {
   margin: 0;
+}
+
+.dark-mode-icon {
+  cursor: pointer;
+  color: var(--color-primary); /* Color del ícono en modo claro */
+}
+
+[data-theme='dark'] .dark-mode-icon {
+  color: #f0f0f0; /* Color del ícono en modo oscuro */
 }
