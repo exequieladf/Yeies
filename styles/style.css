@@ -9,8 +9,9 @@ html {
   --bg-header: #f2f2f2;
   --bg-primary: #f9f9f9;
   --color-static-white: #f9f9f9;
-  --bg-color-call-to-action:#fff5eb;
+  --bg-color-call-to-action: #fff5eb;
   --bg-secondary: #f5f5f5;
+  --bg-particles: linear-gradient(to top, var(--bg-primary) 10%, var(--bg-secondary) 100%);
   --color-primary: #101010;
   --gray-dark: #262424;
   --gray-medium: #333131;
@@ -18,10 +19,10 @@ html {
   --orange-medium: #c13b22;
   --orange-dark: #993822;
   --orange-ligth: #d28f09;
-  --colortext-call-to-action-title:#c13b22;
-  --colortext-call-to-action-details:#993822;
+  --colortext-call-to-action-title: #c13b22;
+  --colortext-call-to-action-details: #993822;
   --color-pulsate-hero: #ffffff99;
-  --color-pulsate-call:rgba(255, 255, 255, 0.6);
+  --color-pulsate-call: rgba(255, 255, 255, 0.6);
   
   --orange-action: #f4bb2d;
   --orange-pastel-medium: #f9ab2cb8;
@@ -31,7 +32,7 @@ html {
   --blue-pastel-ligth: #abdffbf8;
 
   /* --blue-pastel-medium: #59a0cb; */
-  
+
   
   --height-header: 96px;
   /* --orange-dark : #ff5733; */
@@ -45,12 +46,13 @@ html {
   --spacing-6: 48px;
   --spacing-7: 56px;
   --spacing-8: 64px;
-  
-  
+
+
   --shadow-button: 0 0 3px rgba(0, 0, 0, 0.5);
   --shadow-card: 0 0 6px rgba(0, 0, 0, 0.2);
   --shadow-contact: 0 0 6px rgba(0, 0, 0, 0.2);
   --shadow-details: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  --shadow-header: 0 -8px 16px var(--gray-light);
   
   --shadow-call-to-action: 0 5px 15px rgba(0, 0, 0, 0.2);
   --shadow-call-to-action-hover: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -62,22 +64,29 @@ html {
 [data-theme='dark'] {
   --bg-primary: #181818;
   --bg-secondary: #242424;
-  --bg-header: #423f3f;
-  --color-primary: #e0e0e0; /* Color de texto claro */
-  --gray-dark: #f0f0f0; /* Para el texto claro */
-  --gray-medium: #bdb8b8; /* Para el texto medio */
-  --gray-light: #7a7a7a; /* Para el texto más claro */
-  --orange-medium: #c13b22; /* Mantener el mismo o cambiar a un tono más oscuro */
+  --bg-header: #242424;
+  --color-primary: #e0e0e0;
+  /* Color de texto claro */
+  --gray-dark: #f0f0f0;
+  /* Para el texto claro */
+  --gray-medium: #bdb8b8;
+  /* Para el texto medio */
+  --gray-light: #7a7a7a;
+  /* Para el texto más claro */
+  --orange-medium: #c13b22;
+  /* Mantener el mismo o cambiar a un tono más oscuro */
   --orange-dark: #993822;
   --orange-ligth: #d28f09;
   --shadow-card: 0 0 8px rgba(109, 109, 106, 0.781);
-  --shadow-contact: 0 0 6px rgba(0,0,0,.5);
-  --shadow-details: 0 0 6px rgba(0,0,0,.5);
+  --shadow-contact: 0 0 6px rgba(0, 0, 0, .5);
+  --shadow-details: 0 0 6px rgba(0, 0, 0, .5);
   --bg-color-call-to-action: linear-gradient(to right, #cfaf80, #a56a43);
-  --colortext-call-to-action-details:#3b2a20;
-  --colortext-call-to-action-title:#3b2a20;
-  --color-pulsate-hero: rgba(24,24,24,0.5);
-  --color-pulsate-call:#a56a4334;
+  --colortext-call-to-action-details: #3b2a20;
+  --colortext-call-to-action-title: #3b2a20;
+  --color-pulsate-hero: rgba(24, 24, 24, 0.5);
+  --color-pulsate-call: #a56a4334;
+  --bg-particles: linear-gradient(to bottom, var(--bg-secondary) 75%, var(--bg-primary) 100%);
+  --shadow-header: 0 0 16px rgb(17, 17, 17); 
 }
 
 
@@ -146,7 +155,7 @@ hr {
   position: sticky;
   top: 0;
   z-index: 99999;
-  box-shadow: 0 -8px 16px var(--gray-light);
+  box-shadow: var(--shadow-header);
   /* background-color: rgb(244, 242, 242);*/
 }
 
@@ -241,11 +250,12 @@ hr {
   letter-spacing: 1.8px;
   user-select: none;
   padding-top: var(--spacing-7);
-  background-color: var(--bg-secondary);
+  background: var(--bg-particles);
 
   padding-bottom: var(--spacing-7);
 }
 
+/*
 .hero::after {
   content: '';
   position: absolute;
@@ -253,11 +263,11 @@ hr {
   left: 0;
   width: 100%;
   height: 40px;
-  /* Ajusta la altura del difuminado */
   background: linear-gradient(to bottom, var(--bg-secondary) 0%, var(--bg-primary) 100%);
   pointer-events: none;
-  /* Evita interferencia con el contenido */
+
 }
+*/
 
 #particles-js {
   position: absolute;
@@ -483,7 +493,7 @@ details p {
   margin-top: var(--height-header);
   text-align: center;
   padding: 40px 20px;
-  background: var(--bg-color-call-to-action); 
+  background: var(--bg-color-call-to-action);
   box-shadow: var(--shadow-card);
 }
 
@@ -673,7 +683,7 @@ details p {
 .form-group textarea {
   resize: none;
   height: 120px;
-  
+
 }
 
 .form-button {
@@ -825,9 +835,11 @@ nav.footer-section h3 {
 
 .dark-mode-icon {
   cursor: pointer;
-  color: var(--color-primary); /* Color del ícono en modo claro */
+  color: var(--color-primary);
+  /* Color del ícono en modo claro */
 }
 
 [data-theme='dark'] .dark-mode-icon {
-  color: #f0f0f0; /* Color del ícono en modo oscuro */
+  color: #f0f0f0;
+  /* Color del ícono en modo oscuro */
 }
