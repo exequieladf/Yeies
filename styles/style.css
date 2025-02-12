@@ -159,15 +159,22 @@ hr {
   /* background-color: rgb(244, 242, 242);*/
 }
 
+@media (width <1024px) and (orientation: landscape) {
+  /* Estilos para pantallas móviles en horizontal */
+  .header {
+      background-color: transparent;
+      box-shadow: none;
+  }
+}
 
 
 .logo {
   height: 48px;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   opacity: .5;
   z-index: 998;
-
 }
+
 
 .btn-dark {
   font-size: 32px;
