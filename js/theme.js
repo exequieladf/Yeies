@@ -41,7 +41,7 @@ async function sendEmail(e) {
     emailSuccess()
     formContact.reset()
   } else {
-    alert('Error al enviar')
+    alert('AMO A PHP')
   }
 
 }
