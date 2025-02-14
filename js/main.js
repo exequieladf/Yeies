@@ -10,7 +10,7 @@ const body = d.body;
 
 if (!localStorage.getItem('mode')) {
   body.setAttribute('data-theme', 'light'); // Establece tema claro por defecto
-  localStorage.setItem('mode','ligth')
+  localStorage.setItem('mode','light')
 } else {
   body.setAttribute('data-theme', localStorage.getItem('mode')); // Establece tema 
 }
