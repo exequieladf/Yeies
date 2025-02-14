@@ -176,11 +176,6 @@ hr {
 }
 
 
-.btn-dark {
-  font-size: 32px;
-  opacity: .6;
-}
-
 .card-green {
   background-color: var(--green-pastel-medium);
   color: #fff;
@@ -844,9 +839,15 @@ nav.footer-section h3 {
   cursor: pointer;
   color: var(--color-primary);
   /* Color del ícono en modo claro */
+  width: 32px;
+  opacity: .6;
 }
 
 [data-theme='dark'] .dark-mode-icon {
   color: #f0f0f0;
   /* Color del ícono en modo oscuro */
+}
+
+.hidden{
+  display: none;
 }
