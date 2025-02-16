@@ -103,7 +103,7 @@ function applyXiaomiLandscapeStyles() {
   const isLandscape = window.matchMedia("(orientation: landscape)").matches;
 
   if (isXiaomi && isLandscape) {
-      document.querySelector('.header').style.backgroundColor = 'transparent';
+      document.querySelector('.header').style.backgroundColor = 'red';
       document.querySelector('.header').style.boxShadow = 'none';
   } else {
       // Restablecer estilos si no se cumplen las condiciones
