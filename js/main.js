@@ -96,3 +96,19 @@ function setDark() {
   btnMoon.style.display = 'none';
   btnSun.style.display = 'initial';
 }
+
+
+function applyLandscapeStyles() {
+  if (window.matchMedia("(orientation: landscape)").matches && window.innerWidth < 1024) {
+      document.querySelector('.header').style.backgroundColor = 'transparent';
+      document.querySelector('.header').style.boxShadow = 'none';
+  } else {
+      // Restablecer estilos si no está en landscape
+      document.querySelector('.header').style.backgroundColor = ''; // Valor por defecto
+      document.querySelector('.header').style.boxShadow = ''; // Valor por defecto
+  }
+}
+
+window.addEventListener('resize', applyLandscapeStyles);
+window.addEventListener('orientationchange', applyLandscapeStyles);
+applyLandscapeStyles(); // Ejecutar al cargar la página
