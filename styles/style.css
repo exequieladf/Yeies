@@ -23,7 +23,7 @@ html {
   --colortext-call-to-action-details: #993822;
   --color-pulsate-hero: #ffffff99;
   --color-pulsate-call: rgba(255, 255, 255, 0.6);
-  
+
   --orange-action: #f4bb2d;
   --orange-pastel-medium: #f9ab2cb8;
   --green-pastel-medium: #42a35b;
@@ -33,10 +33,10 @@ html {
 
   /* --blue-pastel-medium: #59a0cb; */
 
-  
+
   --height-header: 96px;
   /* --orange-dark : #ff5733; */
-  
+
   --spacing-0: 4px;
   --spacing-1: 8px;
   --spacing-2: 16px;
@@ -53,12 +53,12 @@ html {
   --shadow-contact: 0 0 6px rgba(0, 0, 0, 0.2);
   --shadow-details: inset 0 0 5px rgba(0, 0, 0, 0.1);
   --shadow-header: 0 -8px 16px var(--gray-light);
-  
+
   --shadow-call-to-action: 0 5px 15px rgba(0, 0, 0, 0.2);
   --shadow-call-to-action-hover: 0 8px 20px rgba(0, 0, 0, 0.2);
-  
-  
-  
+
+
+
 }
 
 [data-theme='dark'] {
@@ -86,7 +86,7 @@ html {
   --color-pulsate-hero: rgba(24, 24, 24, 0.5);
   --color-pulsate-call: #a56a4334;
   --bg-particles: linear-gradient(to bottom, var(--bg-secondary) 75%, var(--bg-primary) 100%);
-  --shadow-header: 0 0 16px rgb(17, 17, 17); 
+  --shadow-header: 0 0 16px rgb(17, 17, 17);
 }
 
 
@@ -160,10 +160,11 @@ hr {
 }
 
 @media (width <1024px) and (orientation: landscape) {
+
   /* Estilos para pantallas móviles en horizontal */
   .header {
-      background-color: transparent;
-      box-shadow: none;
+    background-color: transparent;
+    box-shadow: none;
   }
 }
 
@@ -847,4 +848,3 @@ nav.footer-section h3 {
   color: #f0f0f0;
   /* Color del ícono en modo oscuro */
 }
-
