@@ -98,17 +98,23 @@ function setDark() {
 }
 
 
-function applyLandscapeStyles() {
-  if (window.matchMedia("(orientation: landscape)").matches && window.innerWidth < 1024) {
+function applyXiaomiLandscapeStyles() {
+  const isXiaomi = /xiaomi/i.test(navigator.userAgent);
+  const isLandscape = window.matchMedia("(orientation: landscape)").matches;
+
+  if (isXiaomi && isLandscape) {
       document.querySelector('.header').style.backgroundColor = 'transparent';
       document.querySelector('.header').style.boxShadow = 'none';
   } else {
-      // Restablecer estilos si no está en landscape
+      // Restablecer estilos si no se cumplen las condiciones
       document.querySelector('.header').style.backgroundColor = ''; // Valor por defecto
       document.querySelector('.header').style.boxShadow = ''; // Valor por defecto
   }
 }
 
-window.addEventListener('resize', applyLandscapeStyles);
-window.addEventListener('orientationchange', applyLandscapeStyles);
-applyLandscapeStyles(); // Ejecutar al cargar la página
+// Ejecutar al cargar la página
+applyXiaomiLandscapeStyles();
+
+// Escuchar cambios de orientación y tamaño de la ventana
+window.addEventListener('resize', applyXiaomiLandscapeStyles);
+window.addEventListener('orientationchange', applyXiaomiLandscapeStyles);
