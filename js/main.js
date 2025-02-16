@@ -96,25 +96,3 @@ function setDark() {
   btnMoon.style.display = 'none';
   btnSun.style.display = 'initial';
 }
-
-
-function applyXiaomiLandscapeStyles() {
-  const isXiaomi = /xiaomi/i.test(navigator.userAgent);
-  const isLandscape = window.matchMedia("(orientation: landscape)").matches;
-
-  if (isXiaomi && isLandscape) {
-      document.querySelector('.header').style.backgroundColor = 'red';
-      document.querySelector('.header').style.boxShadow = 'none';
-  } else {
-      // Restablecer estilos si no se cumplen las condiciones
-      document.querySelector('.header').style.backgroundColor = ''; // Valor por defecto
-      document.querySelector('.header').style.boxShadow = ''; // Valor por defecto
-  }
-}
-
-// Ejecutar al cargar la página
-applyXiaomiLandscapeStyles();
-
-// Escuchar cambios de orientación y tamaño de la ventana
-window.addEventListener('resize', applyXiaomiLandscapeStyles);
-window.addEventListener('orientationchange', applyXiaomiLandscapeStyles);
